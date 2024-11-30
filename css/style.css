@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body{
+    font-family: "Roboto", sans-serif;
+}
+:root{
+    --dark: #1A2841;
+    --green: #33CFCA;
+    --red: #FF3152;
+    --yellow:#FFC500;
+    --icon:#F0F6FB;
+}
+.main-btn,
+.main-btn:hover,
+.main-btn:focus{
+    background-color: var(--red);
+    color: var(--yellow);
+    padding: .5rem 1rem;
+}
+.main-title::after{
+    position: absolute;
+    content: "";
+    width: 120px;
+    height: 2px;
+    background-color: var(--green);
+    transform: translate(-50px);
+    left: 50%;
+    bottom: -20px;
+}
+.main-title svg{
+    font-size: 50px;
+    color: var(--yellow);
+}
+.icon-holder svg{
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* nav bar start */
+.navbar,
+.project{
+    background-color: var(--dark);
+}
+.navbar .navbar-nav .nav-link,
+.navbar .navbar-nav .navbar-brand{
+    color: white;
+}
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:active{
+    color: var(--green);
+}
+.navbar .search{
+    border-left: 1px solid var(--green);
+}
+.navbar .search svg{
+    color: var(--green);
+}
+.navbar .navbar-toggler{
+    color: white;
+    font-size: 20px;
+    border-color: white;
+}
+.navbar .navbar-toggler:focus{
+    box-shadow: none;
+}
+/* nav bar end */
+/* landing start */
+.landing{
+    background-color: var(--dark);
+    min-height: calc(100vh - 92.66px);
+}
+/* landing end */
+/* features start */
+.features .main-title svg{
+    font-size: 50px;
+    color: var(--yellow);
+}
+.features .icon-holder{
+    height: 200px;
+}
+.features .icon-holder svg{
+    left: 50%;
+    transform: translateX(-50%);
+}
+.features .icon-holder .number{
+    font-size: 15rem;
+    color: var(--icon);
+}
+.features .icon-holder .icon{
+    color: var(--green);
+}
+.features .feat h4{
+    color: var(--yellow);
+}
+/* features end */
+/* works start */
+.work{
+    background-color: var(--icon);
+}
+.work .main-title svg{
+    font-size: 170px;
+}
+.work ul .active{
+    border-radius: 15px;
+        background-color: var(--red);
+    color: var(--yellow);
+}
+.work ul li{
+    cursor: pointer;
+    padding: .5rem 1rem;
+}
+.work ul li:not(.active):hover{
+    color: var(--red);
+}
+.work .box{
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+}
+.work .row .box::before{
+    content: attr(data-work);
+    position: absolute;
+    background-color: #0dcaf07a;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    transition: .5s ease-in-out;
+    font-size: 1.5rem;
+    transform: translateX(calc(-100% - 5px));
+}
+.work .row .box:hover::before{
+    transform: translateX(0px);
+}
+/* works end */
+/* Stuff start */
+.stuff .disc{
+    max-width: 500px;
+}
+/* Stuff end */
+/* start team*/
+.team{
+    background-color: var(--icon);
+}
+.team h2{
+    color: var(--yellow);
+}
+.team .box h4{
+    background-color: var(--green);
+}
+/* end team*/
+/* subscribe start */
+.sub{
+    background-color: var(--yellow);
+}
+.sub input[type="text"]{
+    border: none;
+    border-bottom: 1px solid white;
+}
+.sub input[type="text"]:focus{
+    outline: none;
+}
+.sub ::placeholder{
+    color: white;
+}
+.sub button,
+.sub button:hover,
+.sub button:focus{
+    background-color: var(--dark);
+    color: var(--yellow);
+}
+/* subscribe end */
+/* footer start */
+.footer{
+    background-color: var(--dark);
+}
+.footer .info .text span{
+    color: var(--green);
+}
+.footer .info .text .span{
+    color: var(--yellow);
+}
+.footer .main{
+    padding: .5rem 5rem;
+}
+.footer .links svg{
+    margin-left: 10px;
+    color: white;
+}
+/* footer end */
